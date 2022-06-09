@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/SergeyIvanovDevelop/DEB-Package-Creation">
-    <img alt="Simple-OS" src="./resources/logo.png" width="280" height="280" />
+    <img alt="Simple-OS" src="./resources/logo.png" width="280" height="240" />
   </a>
 </p>
 <h1 align="center">
