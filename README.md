@@ -61,7 +61,7 @@ The `hello_world_deb` file should appear in the `Create_deb` directory
 
 6. From the `Create_deb` directory, execute the command to create the `Create_deb/debian` directory (a service directory for building a `deb` package): `dh_make -p mydebpackagename_0.0.1 --createorig`
 
-, где `mydebpackagename_0.0.1` имя и версия `deb`-пакета соответственно
+, where `mydebpackagename_0.0.1` is the name and version of the `deb` package, respectively
 
 In the terminal for executing this command, 2 questions will be asked.
 
