@@ -19,7 +19,7 @@ This repository contains the code of the simplest program in the `C` programming
 
 **Stage 2**<br>
 
-2. Initial data: there is a directory `~/DEB-Package-Creation/Example_deb_create`, and it contains 2 more empty directories `Create_deb` and `Run_deb`.
+2. Initial data: there is a directory `~/DEB-Package-Creation/Example_deb_create`, and it contains empty directory `Create_deb`. Go to `Example_deb_create`: `cd Example_deb_create`
 
 
 **Stage 3**<br>
@@ -28,7 +28,7 @@ This repository contains the code of the simplest program in the `C` programming
 
 **Stage 4**<br>
 
-4. Create file `hello_world_deb.c` and `Makefile` to it in directory `Create_deb`
+4. Create file `hello_world_deb.c` and `Makefile` (if they are not) to it in directory `Create_deb`
 
 ```
 hello_world_deb.c :
@@ -50,6 +50,9 @@ clean:
 	rm hello_world_deb || true
 ---------------------------
 ```
+<br>
+and create empty directory `Run_deb`: `mkdir Run_deb`
+
 
 **Stage 5**<br>
 
@@ -66,7 +69,7 @@ The `hello_world_deb` file should appear in the `Create_deb` directory
 In the terminal for executing this command, 2 questions will be asked.
 
 1st question: 
-"Type of package: (single, indep, library, python)
+Type of package: (single, indep, library, python)
 [s/i/l/p]?".
 
 Must select "s"<br>
@@ -116,9 +119,9 @@ _Note: "|| true" is necessary so that when trying to re-create the `~/DEB-Packag
 ```
 mydebpackagename.install:
 ------------------------------------
-hello_world_deb.c ~/DEB-Package-Creation/Example_deb_create/Run_deb/mydebpackagename_dir
-hello_world_deb ~/DEB-Package-Creation/Example_deb_create/Run_deb/mydebpackagename_dir
-Makefile ~/DEB-Package-Creation/Example_deb_create/Run_deb/mydebpackagename_dir
+hello_world_deb.c /home/user/DEB-Package-Creation/Example_deb_create/Run_deb/mydebpackagename_dir
+hello_world_deb /home/user/DEB-Package-Creation/Example_deb_create/Run_deb/mydebpackagename_dir
+Makefile /home/user/DEB-Package-Creation/Example_deb_create/Run_deb/mydebpackagename_dir
 ------------------------------------
 ```
 
@@ -140,7 +143,7 @@ Makefile ~/DEB-Package-Creation/Example_deb_create/Run_deb/mydebpackagename_dir
 
 **Stage 17**<br>
 
-17. Run the command to install the `deb` package: `sudo dpkg -i mydebpackagename_0.0.1–1_amd64.deb`
+17. Run the command to install the `deb` package: `sudo dpkg -i mydebpackagename_0.0.1-1_amd64.deb`
 
 **Stage 18**<br>
 
