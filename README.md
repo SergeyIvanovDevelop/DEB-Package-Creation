@@ -51,8 +51,8 @@ clean:
 ---------------------------
 ```
 <br>
-and create empty directory `Run_deb`: `mkdir Run_deb`
 
+and create empty directory `Run_deb`: `mkdir Run_deb`
 
 **Stage 5**<br>
 
